@@ -1,6 +1,6 @@
 package com.gym.persistence.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 public class FaceData {

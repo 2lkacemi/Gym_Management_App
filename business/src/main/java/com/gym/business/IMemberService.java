@@ -1,9 +1,6 @@
 package com.gym.business;
 
-
-import com.gym.persistence.daos.MemberDao;
-import com.gym.persistence.entities.Member;
-
+import java.lang.reflect.Member;
 import java.util.List;
 
 public interface IMemberService {

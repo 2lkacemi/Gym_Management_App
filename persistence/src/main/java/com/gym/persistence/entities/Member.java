@@ -1,12 +1,11 @@
 package com.gym.persistence.entities;
 
 import com.gym.persistence.enums.MembershipType;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -30,7 +29,4 @@ public class Member {
     private List<Payment> payments;
     @OneToMany(mappedBy = "member")
     private List<FaceData> faceDataList;
-
-    @Column(nullable = false, updatable = false)
-    private String memberCode;
 }

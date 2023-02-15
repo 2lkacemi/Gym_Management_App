@@ -1,12 +1,10 @@
 package com.gym.business;
 
-import com.gym.persistence.entities.Member;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Member;
 import java.util.List;
-import java.util.UUID;
-
 
 @AllArgsConstructor
 @Service
@@ -15,8 +13,8 @@ public class MemberServiceImpl implements IMemberService {
 
     @Override
     public Member save(Member member) {
-        member.setMemberCode(UUID.randomUUID().toString());
         return iMemberService.save(member);
+        // TODO: add uuid memberCode
     }
 
     @Override

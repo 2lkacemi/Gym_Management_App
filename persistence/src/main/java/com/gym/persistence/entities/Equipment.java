@@ -1,9 +1,9 @@
 package com.gym.persistence.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Equipment {
@@ -13,5 +13,4 @@ public class Equipment {
     private String name;
     private String manufacturer;
     private String maintenanceSchedule;
-    // getters and setters
 }

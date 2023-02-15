@@ -1,8 +1,9 @@
 package com.gym.persistence.entities;
 
 import com.gym.persistence.enums.PaymentMethod;
-import jakarta.persistence.*;
 
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 

@@ -1,7 +1,7 @@
 package com.gym.persistence.entities;
 
-import jakarta.persistence.*;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
